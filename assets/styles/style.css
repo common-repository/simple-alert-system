@@ -1,0 +1,95 @@
+/* Font Call starts here */
+@import "https://fonts.googleapis.com/css?family=Fredericka+the+Great|Great+Vibes|Josefin+Slab|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed&display=swap";
+@import 'https://fonts.googleapis.com/css?family=Poppins:Bold|Poppins:Medium|Roboto&display=swap';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp';
+#simple-alert-system {
+  width: 100%;
+  height: auto;
+  background: red;
+  text-align: center;
+  transition: all .5s;
+  position: relative;
+}
+#simple-alert-system a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+#simple-alert-system.hideAlert {
+  transition: all .5s;
+  display: none;
+}
+#simple-alert-system .alert-title {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif !important;
+  letter-spacing: .8px;
+}
+#simple-alert-system .alert-box {
+  display: inline-block;
+  width: 1000px;
+  margin: auto;
+  text-align: center;
+  padding: 25px 0;
+  color: white;
+  font-size: 17px;
+  font-family: 'Open Sans', sans-serif !important;
+}
+#simple-alert-system .close-alert {
+  position: absolute;
+  right: 50px;
+  z-index: 99;
+  top: 50px;
+  color: white;
+  opacity: .5;
+  transition: all .5s;
+  cursor: pointer;
+}
+#simple-alert-system .close-alert:hover {
+  opacity: .8;
+  transition: all .5s;
+}
+
+#simple-alert-system .alert-box {
+    color:  green!important;
+    line-height: 1.5;
+}
+
+#simple-alert-system .alert-box strong {
+line-height: 24px;
+}
+
+.sas_cta {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 3px;
+  width: auto;
+  margin: auto;
+  margin-top: 15px;
+  background: #fffffd;
+  color: #2596f3;
+  opacity: .8;
+  transition: all 1s;
+  height: 30px;
+  line-height: 30px
+}
+
+.sas_cta:hover {
+opacity: 1;
+transition: all 1s;	
+}
+
+@media only screen and (max-width: 1200px) {
+  #simple-alert-system .alert-box {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #simple-alert-system .close-alert {
+    top: 20px;
+    right: 20px;
+  }
+}

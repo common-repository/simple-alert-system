@@ -1,0 +1,411 @@
+@charset "utf-8";
+/* CSS Document */
+
+.simple_alert_system #simple-alert-system {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    z-index: 999;
+	
+}
+
+.simple_alert_system .close-alert {
+pointer-events: none!important;
+}
+
+.simple_alert_system {
+  width: 95%;
+  background: #fff;
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 25px
+}
+.simple_alert_system h1 {
+  display: inline-block;
+  position: relative;
+}
+
+.simple_alert_system h2:after {
+  content: "settings_applications";
+  font-family: "Material Icons";
+  float: left;
+  margin-right: 10px;
+  font-size: 22px;
+}
+.simple_alert_system h2:last-of-type:after {
+  content: "design_services";
+  font-family: "Material Icons";
+}
+.simple_alert_system h2 {
+  padding: 10px 10px 10px 0;
+  font-weight: normal;
+ /* border: 1px solid #eee; */
+  color: #535050;
+  font-size: 17px;
+}
+.simple_alert_system .sas_title:before {
+  content: url("../../img/icon.png");
+  font-family: "Material Icons";
+  float: left;
+  width: 40px;
+  height: 50px;
+  margin-top: -15px;
+  margin-right: 15px;
+  margin-left: -10px;
+}
+.simple_alert_system input, .simple_alert_system textarea {
+  width: 400px;
+  padding: 0;
+}
+#submit, input[type="radio"], input[type="checkbox"] {
+  width: initial;
+}
+.simple_alert_system .call-to-action {
+  width: 100%;
+}
+/* Customize the label (the container) */
+.simple_alert_system .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.simple_alert_system .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.simple_alert_system .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.simple_alert_system .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.simple_alert_system .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.simple_alert_system .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.simple_alert_system .container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.simple_alert_system .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.simple_alert_system fieldset.first label {
+  margin-right: 7px !important;
+  width: 174px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.simple_alert_system fieldset:not(.first) label {
+  float: left !important;
+  width: 78px !important;
+  display: inline-flex !important;
+}
+.simple_alert_system fieldset:not(.first) .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.simple_alert_system fieldset:not(.first) .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.simple_alert_system fieldset:not(.first) .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.simple_alert_system fieldset:not(.first) .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.simple_alert_system fieldset:not(.first) .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.simple_alert_system fieldset:not(.first) .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.simple_alert_system fieldset:not(.first) .container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.simple_alert_system fieldset:not(.first) .container .checkmark:after {
+  top: 7.1px;
+  left: 7.3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.simple_alert_system #title, .simple_alert_system #message, .simple_alert_system #cta-style {
+  padding: 5px;
+}
+
+.simple_alert_system #title.cta, .simple_alert_system #cta-style {
+width: 196px;
+}
+
+.simple_alert_system fieldset.first label:nth-of-type(1) {
+  background: #4CAF50;
+}
+.simple_alert_system fieldset.first label:nth-of-type(2) {
+  background: #2196F3;
+}
+.simple_alert_system fieldset.first label:nth-of-type(3) {
+  background: #ffeb3b;
+  color: #000;
+}
+.simple_alert_system fieldset.first label:nth-of-type(4) {
+  background: #f44336;
+}
+.simple_alert_system fieldset.first > * {
+  transition: all .6s;
+  border: 1px solid #ccc !important;
+}
+/* CSS for light colors */
+.simple_alert_system fieldset#light label:nth-of-type(1) {
+  background: #ddffdd;
+}
+.simple_alert_system fieldset#light label:nth-of-type(2) {
+  background: #ddffff;
+}
+.simple_alert_system fieldset#light label:nth-of-type(3) {
+  background: #ffffcc;
+}
+.simple_alert_system fieldset#light label:nth-of-type(4) {
+  background: #ffdddd;
+}
+.simple_alert_system fieldset#light > * {
+  color: #333;
+  border: 1px solid #ccc !important;
+  transition: all .6s;
+}
+/* CSS for flat colors */
+.simple_alert_system fieldset#flat label:nth-of-type(1) {
+  background: #1abc9c;
+  color: #333 !important;
+}
+.simple_alert_system fieldset#flat label:nth-of-type(2) {
+  background: #3498db;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#flat label:nth-of-type(3) {
+  background: #f1c40f;
+}
+.simple_alert_system fieldset#flat label:nth-of-type(4) {
+  background: #e74c3c;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#flat > * {
+  border: 1px solid #ccc !important;
+  transition: all .6s;
+}
+/* CSS for material colors */
+.simple_alert_system fieldset#material label:nth-of-type(1) {
+  background: #66BB6A;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#material label:nth-of-type(2) {
+  background: #40C4FF !important;
+  color: #333 !important;
+}
+.simple_alert_system fieldset#material label:nth-of-type(3) {
+  background: #FFD600 !important;
+}
+.simple_alert_system fieldset#material label:nth-of-type(4) {
+  background: #ff8a80 !important;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#material > * {
+  border: 1px solid #ccc !important;
+  transition: all .6s;
+}
+/* CSS for social colors */
+.simple_alert_system fieldset#social label:nth-of-type(1) {
+  background: #25D366;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#social label:nth-of-type(2) {
+  background: #21759b !important;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#social label:nth-of-type(3) {
+  background: #FFFC00 !important;
+}
+.simple_alert_system fieldset#social label:nth-of-type(4) {
+  background: #ff5700 !important;
+  color: #fff !important;
+}
+.simple_alert_system fieldset#social > * {
+  border: 1px solid #ccc !important;
+  transition: all .6s;
+}
+/* The switch - the box around the slider */
+.simple_alert_system .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+/* Hide default HTML checkbox */
+.simple_alert_system .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.simple_alert_system .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.simple_alert_system .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.simple_alert_system input:checked + .slider {
+  background-color: #2196F3;
+}
+.simple_alert_system input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+.simple_alert_system input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.simple_alert_system #bgColor, .simple_alert_system #fontColor {
+  height: 40px;
+}
+.simple_alert_system input[type="date"] {
+  width: 150px;
+  float: left;
+  height: 40px;
+  padding: 5px;
+}
+input[id$="date"] {
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 28px;
+  line-height: 28px;
+  width: 140px;
+  margin-right: 0;
+  border-radius: 8px;
+  position: relative;
+  float: left;
+  padding: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.sas-cal-label {
+  float: left;
+  margin-right: -1px;
+  height: 30px;
+  line-height: 30px;
+  background: #ccc;
+  color: white;
+  text-align: center !important;
+}
+.simple_alert_system span.dashicons.dashicons-calendar {
+  float: none;
+  position: relative;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.sas_notice {
+  text-align: left;
+  height: auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+.simple_alert_system .call-to-action.Err {
+  color: red !important;
+}
+.simple_alert_system input#sas_scope {
+  width: 250px;
+  padding-left: 5px;
+}
+.simple_alert_system a.call-to-action.douleLine {
+  line-height: 20px;
+  margin-top: 10px;
+}
+.simple_alert_system span.sas_date_range {
+  float: left;
+  width: 40px;
+  text-align: center;
+  line-height: 30px;
+  color: #666;
+  font-style: italic;
+}
+.simple_alert_system  .form-table, .simple_alert_system .form-table td, .simple_alert_system .form-table th {
+  padding: 10px;
+  border: 1px solid #eee;
+}
